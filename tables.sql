@@ -1,1 +1,3 @@
--- CS3431 TABLES FILE --
+CREATE TABLE Employee(
+
+);
