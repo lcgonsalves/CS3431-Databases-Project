@@ -57,4 +57,19 @@ FROM ( SELECT employee_id, count(room_id) as CNT
 	   GROUP BY employee_id	)
 GROUP BY employee_id;
 
+-- Q7: Report the number of regular employees, division managers, and general
+-- managers in the hospital. The output should look like:
+
+-- Q8: For patients who have a scheduled future visit (which is part of their most recent
+-- visit), report that patient (SSN, and first and last names) and the visit date. Do not
+-- report patients who do not have scheduled visit.
+
+
+-- Q9: For each equipment type that has more than 3 units, report the equipment type ID,
+-- model, and the number of units this type has.
+
+-- Q10: Report the date of the coming future visit for patient with SSN = 111-22-3333.
+-- Note: This date should exist in the last (most recent) visit of that patient.
+
+
 
