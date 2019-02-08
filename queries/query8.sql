@@ -5,7 +5,7 @@ SELECT ssn, first_name, last_name, future_visit_date
 FROM (SELECT patient, future_visit_date
 	  FROM ( SELECT patient, id, max(check_in)
 	  	  		  FROM Admission
-	  	          GROUP BY patient, id)  -- select only most recent admission
-	  WHERE future_visit_date IS NOT NULL) R1,
+	  	          GROUP BY patient, id) R1 -- select only most recent admission
+	  WHERE R1.future_visit_date IS NOT NULL) R2,
 	  Patient P
 WHERE P.ssn in R1.patient;
