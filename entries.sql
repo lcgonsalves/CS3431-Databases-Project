@@ -100,3 +100,28 @@ INSERT INTO Regular (r_id,employee_id,divisional_manager_id) VALUES (7,13,3);
 INSERT INTO Regular (r_id,employee_id,divisional_manager_id) VALUES (8,14,3);
 INSERT INTO Regular (r_id,employee_id,divisional_manager_id) VALUES (9,15,3);
 INSERT INTO Regular (r_id,employee_id,divisional_manager_id) VALUES (10,16,4);
+
+----Create Rooms----
+INSERT INTO Room (room_num,is_occupied) VALUES (1,0);
+INSERT INTO Room (room_num,is_occupied) VALUES (2,0);
+INSERT INTO Room (room_num,is_occupied) VALUES (3,1);
+INSERT INTO Room (room_num,is_occupied) VALUES (4,0);
+INSERT INTO Room (room_num,is_occupied) VALUES (5,0);
+INSERT INTO Room (room_num,is_occupied) VALUES (6,1);
+INSERT INTO Room (room_num,is_occupied) VALUES (7,0);
+INSERT INTO Room (room_num,is_occupied) VALUES (8,0);
+INSERT INTO Room (room_num,is_occupied) VALUES (9,1);
+INSERT INTO Room (room_num,is_occupied) VALUES (10,1);
+
+----Create Room Services----
+INSERT INTO RoomServices (room_num,service) VALUES (1,'Massage');
+INSERT INTO RoomServices (room_num,service) VALUES (1,'Oral Surgery');
+INSERT INTO RoomServices (room_num,service) VALUES (1,'Vasectomy');
+INSERT INTO RoomServices (room_num,service) VALUES (2,'X-Rays');
+INSERT INTO RoomServices (room_num,service) VALUES (2,'MRI');
+INSERT INTO RoomServices (room_num,service) VALUES (2,'CT-Scan');
+INSERT INTO RoomServices (room_num,service) VALUES (3,'Stitching');
+INSERT INTO RoomServices (room_num,service) VALUES (3,'ICU');
+INSERT INTO RoomServices (room_num,service) VALUES (3,'Ultra-sound');
+
+----Create Equipment----
