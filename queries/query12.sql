@@ -5,7 +5,3 @@ SELECT type_id
 FROM Equipment
 WHERE year_of_purchase = 2010 OR year_of_purchase = 2011
 GROUP BY type_id;
-
--- SELECT type_id
--- FROM ( SELECT type_id FROM Equipment WHERE year_of_purchase = 2010 )
--- WHERE year_of_purchase = 2011;
