@@ -42,8 +42,6 @@ VALUES (9,'Blood','Female','Oprah','Winfrey');
 INSERT INTO Doctor (id,specialty,gender,first_name,last_name)
 VALUES (10,'Toes','Female','Alexis','Woods');
 
-----Create Rooms----
-
 ----Create Employees----
 INSERT INTO Employee (id,first_name,last_name,job_title,salary,office_num)
 VALUES (1,'Alex','Smith','Cleaner I',100000,0);
