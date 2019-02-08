@@ -1,24 +1,24 @@
 ----Create Patients----
 INSERT INTO Patient (ssn,address,tel_number,first_name,last_name)
-VALUES (000000000,'100 Institute Road, Worcester, MA, 01609',15555555555,'John','Doe');
+VALUES ('000-00-0000','100 Institute Road, Worcester, MA, 01609',15555555555,'John','Doe');
 INSERT INTO Patient (ssn,address,tel_number,first_name,last_name)
-VALUES (000000001,'101 Institute Road, Worcester, MA, 01609',15555555556,'Mark','Key');
+VALUES ('000-00-0001','101 Institute Road, Worcester, MA, 01609',15555555556,'Mark','Key');
 INSERT INTO Patient (ssn,address,tel_number,first_name,last_name)
-VALUES (000000002,'102 Institute Road, Worcester, MA, 01609',15555555557,'Fan','Plug');
+VALUES ('000-00-0002','102 Institute Road, Worcester, MA, 01609',15555555557,'Fan','Plug');
 INSERT INTO Patient (ssn,address,tel_number,first_name,last_name)
-VALUES (000000003,'103 Institute Road, Worcester, MA, 01609',15555555558,'Jane','Board');
+VALUES ('000-00-0003','103 Institute Road, Worcester, MA, 01609',15555555558,'Jane','Board');
 INSERT INTO Patient (ssn,address,tel_number,first_name,last_name)
-VALUES (000000004,'104 Institute Road, Worcester, MA, 01609',15555555559,'Suzzy','Cup');
+VALUES ('000-00-0004','104 Institute Road, Worcester, MA, 01609',15555555559,'Suzzy','Cup');
 INSERT INTO Patient (ssn,address,tel_number,first_name,last_name)
-VALUES (000000005,'105 Institute Road, Worcester, MA, 01609',15555555510,'Jasmine','Bags');
+VALUES ('000-00-0005','105 Institute Road, Worcester, MA, 01609',15555555510,'Jasmine','Bags');
 INSERT INTO Patient (ssn,address,tel_number,first_name,last_name)
-VALUES (000000006,'106 Institute Road, Worcester, MA, 01609',15555555511,'Jenna','Brown');
+VALUES ('000-00-0006','106 Institute Road, Worcester, MA, 01609',15555555511,'Jenna','Brown');
 INSERT INTO Patient (ssn,address,tel_number,first_name,last_name)
-VALUES (000000007,'107 Institute Road, Worcester, MA, 01609',15555555512,'Jocelyn','Dell');
+VALUES ('000-00-0007','107 Institute Road, Worcester, MA, 01609',15555555512,'Jocelyn','Dell');
 INSERT INTO Patient (ssn,address,tel_number,first_name,last_name)
-VALUES (000000008,'108 Institute Road, Worcester, MA, 01609',15555555513,'Leo','Core');
+VALUES ('000-00-0008','108 Institute Road, Worcester, MA, 01609',15555555513,'Leo','Core');
 INSERT INTO Patient (ssn,address,tel_number,first_name,last_name)
-VALUES (000000009,'109 Institute Road, Worcester, MA, 01609',15555555514,'Ham','Sandwich');
+VALUES ('000-00-0009','109 Institute Road, Worcester, MA, 01609',15555555514,'Ham','Sandwich');
 
 ----Create Doctors----
 INSERT INTO Doctor (id,specialty,gender,first_name,last_name)
@@ -196,7 +196,7 @@ VALUES (3,'Accord', 'Will last forever','Drive it',30);
 INSERT INTO Equipment (serial_num,type_id,year_of_purchase,inspection,room_num)
 VALUES ('AC-2018',1,2018,TO_TIMESTAMP ('10-Sep-14 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),1);
 INSERT INTO Equipment (serial_num,type_id,year_of_purchase,inspection,room_num)
-VALUES ('AC-2004',1,2017,TO_TIMESTAMP ('10-Sep-15 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),2);
+VALUES ('AC-2004',1,2010,TO_TIMESTAMP ('10-Sep-15 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),2);
 INSERT INTO Equipment (serial_num,type_id,year_of_purchase,inspection,room_num)
 VALUES ('AC-2008',1,2016,TO_TIMESTAMP ('10-Sep-16 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),2);
 INSERT INTO Equipment (serial_num,type_id,year_of_purchase,inspection,room_num)
@@ -212,4 +212,12 @@ VALUES ('AD-2011',3,2015,TO_TIMESTAMP ('10-Sep-21 14:10:10.123000', 'DD-Mon-RR H
 INSERT INTO Equipment (serial_num,type_id,year_of_purchase,inspection,room_num)
 VALUES ('AD-1997',3,2011,TO_TIMESTAMP ('10-Sep-22 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),10);
 INSERT INTO Equipment (serial_num,type_id,year_of_purchase,inspection,room_num)
-VALUES ('A01-02X',3,2011,TO_TIMESTAMP ('10-Sep-22 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),10);
+VALUES ('A01-02L',3,2010,TO_TIMESTAMP ('10-Sep-22 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),10);
+INSERT INTO Equipment (serial_num,type_id,year_of_purchase,inspection,room_num)
+VALUES ('A01-01T',2,2011,TO_TIMESTAMP ('10-Sep-22 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),10);
+INSERT INTO Equipment (serial_num,type_id,year_of_purchase,inspection,room_num)
+VALUES ('A01-05U',2,2010,TO_TIMESTAMP ('10-Sep-22 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),10);
+INSERT INTO Equipment (serial_num,type_id,year_of_purchase,inspection,room_num)
+VALUES ('A01-04G',2,2011,TO_TIMESTAMP ('10-Sep-22 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),10);
+INSERT INTO Equipment (serial_num,type_id,year_of_purchase,inspection,room_num)
+VALUES ('A01-09J',2,2010,TO_TIMESTAMP ('10-Sep-22 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),10);

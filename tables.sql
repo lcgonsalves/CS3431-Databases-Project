@@ -79,7 +79,7 @@ CONSTRAINT doctor_id_pk PRIMARY KEY(id)
 );
 
 CREATE TABLE Patient(
-ssn number(10) NOT NULL,
+ssn varchar2(20) NOT NULL,
 address varchar2(50) NOT NULL,
 tel_number number(14),
 first_name varchar2(30) NOT NULL,
@@ -99,7 +99,7 @@ CONSTRAINT admission_id_pk PRIMARY KEY(id)
 );
 
 CREATE TABLE AdmittedPatients(
-patient_ssn number(10) NOT NULL,
+patient_ssn varchar2(20) NOT NULL,
 admission_id number(30) NOT NULL,
 CONSTRAINT patient_ssn_fk FOREIGN KEY (patient_ssn) REFERENCES Patient(ssn),
 CONSTRAINT a_admission_id_fk FOREIGN KEY (admission_id) REFERENCES Admission(id)
