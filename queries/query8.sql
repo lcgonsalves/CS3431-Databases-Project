@@ -6,6 +6,6 @@ FROM (SELECT patient, future_visit_date
 	  FROM ( SELECT patient, id, max(check_in)
 	  	  		  FROM Admission
 	  	          GROUP BY patient, id)  -- select only most recent admission
-	  WHERE future_visit_date IS NOT NULL) as R1,
-	  Patient as P
+	  WHERE future_visit_date IS NOT NULL) R1,
+	  Patient P
 WHERE P.ssn in R1.patient;
