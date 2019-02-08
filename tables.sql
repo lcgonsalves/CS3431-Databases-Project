@@ -95,7 +95,8 @@ check_out TIMESTAMP(0),
 cost number(12),
 insurance_coverage float(7),
 future_visit_date TIMESTAMP(0),
-CONSTRAINT admission_id_pk PRIMARY KEY(id)
+CONSTRAINT admission_id_pk PRIMARY KEY(id),
+CONSTRAINT a_patient_fk FOREIGN KEY (patient) REFERENCES Admission(patient)
 );
 
 CREATE TABLE AdmittedPatients(

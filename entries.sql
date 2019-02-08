@@ -209,7 +209,7 @@ VALUES (3,'Accord', 'Will last forever','Drive it',30);
 INSERT INTO Equipment (serial_num,type_id,year_of_purchase,inspection,room_num)
 VALUES ('AC-2018',1,2018,TO_TIMESTAMP ('10-Sep-14 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),1);
 INSERT INTO Equipment (serial_num,type_id,year_of_purchase,inspection,room_num)
-VALUES ('AC-2004',1,2010,TO_TIMESTAMP ('10-Sep-15 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),2);
+VALUES ('AC-2004',1,2019,TO_TIMESTAMP ('10-Sep-15 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),2);
 INSERT INTO Equipment (serial_num,type_id,year_of_purchase,inspection,room_num)
 VALUES ('AC-2008',1,2016,TO_TIMESTAMP ('10-Sep-16 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),2);
 INSERT INTO Equipment (serial_num,type_id,year_of_purchase,inspection,room_num)
