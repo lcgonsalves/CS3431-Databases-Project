@@ -130,57 +130,59 @@ INSERT INTO Permissions (employee_id,room_id, permission) VALUES (1,4,'Soak it')
 INSERT INTO Permissions (employee_id,room_id, permission) VALUES (2,1,'Clean it');
 
 ----Create Admissions----
-INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage)
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage, future_visit_date)
 VALUES (0001, 000000007, TO_TIMESTAMP ('10-Sep-01 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
-TO_TIMESTAMP ('10-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 350, 0.8);
+TO_TIMESTAMP ('10-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 350, 0.8, null);
 
-INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage)
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage, future_visit_date)
 VALUES (0002, 000000007, TO_TIMESTAMP ('10-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
-TO_TIMESTAMP ('10-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 500, 0.5);
+TO_TIMESTAMP ('10-Sep-02 15:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 500, 0.5, null);
 
-INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage)
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage, future_visit_date)
 VALUES (0003, 000000007, TO_TIMESTAMP ('10-Sep-03 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
-TO_TIMESTAMP ('10-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 200, 0.7);
+TO_TIMESTAMP ('10-Sep-05 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 200, 0.7, null);
 
-INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage)
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage, future_visit_date)
 VALUES (0004, 000000003, TO_TIMESTAMP ('10-Sep-04 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
-TO_TIMESTAMP ('10-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 670, 0.5);
+TO_TIMESTAMP ('10-Sep-08 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 670, 0.5, null);
 
-INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage)
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage, future_visit_date)
 VALUES (0005, 000000003, TO_TIMESTAMP ('10-Sep-05 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
-TO_TIMESTAMP ('10-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 10000, 0.7);
+TO_TIMESTAMP ('10-Oct-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 10000, 0.7, null);
 
-INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage)
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage, future_visit_date)
 VALUES (0006, 000000002, TO_TIMESTAMP ('10-Sep-06 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
-TO_TIMESTAMP ('10-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 670, 0.5);
+TO_TIMESTAMP ('11-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 670, 0.5, null);
 
-INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage)
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage, future_visit_date)
 VALUES (0007, 000000002, TO_TIMESTAMP ('10-Sep-07 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
-TO_TIMESTAMP ('10-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 10000, 0.7);
+TO_TIMESTAMP ('12-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 10000, 0.7, null);
 
-INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage)
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage, future_visit_date)
 VALUES (0008, 000000001, TO_TIMESTAMP ('10-Sep-08 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
-TO_TIMESTAMP ('10-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 456, 0.8);
+TO_TIMESTAMP ('13-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 456, 0.8, null);
 
-INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage)
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage, future_visit_date)
 VALUES (0009, 000000001, TO_TIMESTAMP ('10-Sep-09 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
-TO_TIMESTAMP ('10-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 6666, 0.5);
+TO_TIMESTAMP ('14-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 6666, 0.5, null);
 
-INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage)
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage, future_visit_date)
 VALUES (0010, 000000001, TO_TIMESTAMP ('10-Sep-10 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
-TO_TIMESTAMP ('10-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 69.45, 0.2);
+TO_TIMESTAMP ('15-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 69.45, 0.2,
+TO_TIMESTAMP ('15-Oct-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'));
 
-INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage)
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage, future_visit_date)
 VALUES (0011, 000000004, TO_TIMESTAMP ('10-Sep-11 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
-TO_TIMESTAMP ('10-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 456, 0.8);
+TO_TIMESTAMP ('10-Sep-12 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 456, 0.8);
 
-INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage)
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage, future_visit_date)
 VALUES (0012, 000000004, TO_TIMESTAMP ('10-Sep-12 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
-TO_TIMESTAMP ('10-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 45, 0.5);
+TO_TIMESTAMP ('10-Sep-25 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 45, 0.5,
+TO_TIMESTAMP ('10-Sep-13 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'));
 
-INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage)
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage, future_visit_date)
 VALUES (0013, 000000004, TO_TIMESTAMP ('10-Sep-13 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
-TO_TIMESTAMP ('10-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 69.45, 0.2);
+TO_TIMESTAMP ('10-Sep-26 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 69.45, 0.2, null);
 
 ----Create Equipment Type----
 INSERT INTO Type (type_id,model,description,instructions,num_units)
