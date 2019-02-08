@@ -126,31 +126,56 @@ INSERT INTO RoomServices (room_num,service) VALUES (3,'Ultra-sound');
 
 ----Create Admissions----
 INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage)
-VALUES (0001, 000000007, "2005-01-22[T20:28:00[.00]]", "2005-01-23[T20:28:00[.00]]", 350, 0.8);
+VALUES (0001, 000000007, TO_TIMESTAMP ('10-Sep-01 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
+TO_TIMESTAMP ('10-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 350, 0.8);
+
 INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage)
-VALUES (0002, 000000007, "2007-01-20[T20:28:00[.00]]", "2005-01-23[T20:28:00[.00]]", 500, 0.5);
+VALUES (0002, 000000007, TO_TIMESTAMP ('10-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
+TO_TIMESTAMP ('10-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 500, 0.5);
+
 INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage)
-VALUES (0003, 000000007, "2007-03-22[T10:28:00[.00]]", "2008-01-23[T20:28:00[.00]]", 200, 0.7);
+VALUES (0003, 000000007, TO_TIMESTAMP ('10-Sep-03 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
+TO_TIMESTAMP ('10-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 200, 0.7);
+
 INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage)
-VALUES (0004, 000000003, "2007-01-20[T20:28:00[.00]]", "2008-01-23[T20:28:00[.00]]", 670, 0.5);
+VALUES (0004, 000000003, TO_TIMESTAMP ('10-Sep-04 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
+TO_TIMESTAMP ('10-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 670, 0.5);
+
 INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage)
-VALUES (0005, 000000003, "2007-03-22[T10:28:00[.00]]", "2008-01-23[T20:28:00[.00]]", 10000, 0.7);
+VALUES (0005, 000000003, TO_TIMESTAMP ('10-Sep-05 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
+TO_TIMESTAMP ('10-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 10000, 0.7);
+
 INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage)
-VALUES (0006, 000000002, "2007-05-20[T20:28:00[.00]]", "2008-01-23[T20:28:00[.00]]", 670, 0.5);
+VALUES (0006, 000000002, TO_TIMESTAMP ('10-Sep-06 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
+TO_TIMESTAMP ('10-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 670, 0.5);
+
 INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage)
-VALUES (0007, 000000002, "2007-06-22[T10:28:00[.00]]", "2008-01-23[T20:28:00[.00]]", 10000, 0.7);
+VALUES (0007, 000000002, TO_TIMESTAMP ('10-Sep-07 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
+TO_TIMESTAMP ('10-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 10000, 0.7);
+
 INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage)
-VALUES (0008, 000000001, "2002-01-22[T20:28:00[.00]]", "2005-01-23[T20:28:00[.00]]", 456, 0.8);
+VALUES (0008, 000000001, TO_TIMESTAMP ('10-Sep-08 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
+TO_TIMESTAMP ('10-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 456, 0.8);
+
 INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage)
-VALUES (0009, 000000001, "2002-01-20[T20:28:00[.00]]", "2005-01-23[T20:28:00[.00]]", 6666, 0.5);
+VALUES (0009, 000000001, TO_TIMESTAMP ('10-Sep-09 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
+TO_TIMESTAMP ('10-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 6666, 0.5);
+
 INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage)
-VALUES (0010, 000000001, "2019-03-22[T10:28:00[.00]]", "2019-03-25[T10:28:00[.00]]", 69.45, 0.2);
+VALUES (0010, 000000001, TO_TIMESTAMP ('10-Sep-10 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
+TO_TIMESTAMP ('10-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 69.45, 0.2);
+
 INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage)
-VALUES (0011, 000000004, "2012-01-22[T20:28:00[.00]]", "2012-12-22[T20:28:00[.00]]", 456, 0.8);
+VALUES (0011, 000000004, TO_TIMESTAMP ('10-Sep-11 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
+TO_TIMESTAMP ('10-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 456, 0.8);
+
 INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage)
-VALUES (0012, 000000004, "2013-01-20[T20:28:00[.00]]", "2013-02-10[T20:28:00[.00]]", 45, 0.5);
+VALUES (0012, 000000004, TO_TIMESTAMP ('10-Sep-12 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
+TO_TIMESTAMP ('10-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 45, 0.5);
+
 INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage)
-VALUES (0013, 000000004, "2019-05-22[T10:28:00[.00]]", "2019-05-25[T10:28:00[.00]]", 69.45, 0.2);
+VALUES (0013, 000000004, TO_TIMESTAMP ('10-Sep-13 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
+TO_TIMESTAMP ('10-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 69.45, 0.2);
 
 ----Create Equipment Type----
 INSERT INTO Type (type_id,model,description,instructions,num_units)
@@ -162,20 +187,20 @@ VALUES (3,'Accord', 'Will last forever','Drive it',30);
 
 ----Create Equipment----
 INSERT INTO Equipment (serial_num,type_id,year_of_purchase,inspection,room_num)
-VALUES ('AC-2018',1,2018,'2018-10-06',1);
+VALUES ('AC-2018',1,2018,TO_TIMESTAMP ('10-Sep-14 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),1);
 INSERT INTO Equipment (serial_num,type_id,year_of_purchase,inspection,room_num)
-VALUES ('AC-2004',1,2017,'2018-10-05',2);
+VALUES ('AC-2004',1,2017,TO_TIMESTAMP ('10-Sep-15 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),2);
 INSERT INTO Equipment (serial_num,type_id,year_of_purchase,inspection,room_num)
-VALUES ('AC-2008',1,2016,'2018-10-04',2);
+VALUES ('AC-2008',1,2016,TO_TIMESTAMP ('10-Sep-16 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),2);
 INSERT INTO Equipment (serial_num,type_id,year_of_purchase,inspection,room_num)
-VALUES ('CV-2018',2,2018,'2018-11-06',2);
+VALUES ('CV-2018',2,2018,TO_TIMESTAMP ('10-Sep-17 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),2);
 INSERT INTO Equipment (serial_num,type_id,year_of_purchase,inspection,room_num)
-VALUES ('CV-2019',2,2019,'2018-01-06',3);
+VALUES ('CV-2019',2,2019,TO_TIMESTAMP ('10-Sep-18 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),3);
 INSERT INTO Equipment (serial_num,type_id,year_of_purchase,inspection,room_num)
-VALUES ('CV-2000',2,2013,'2018-02-06',6);
+VALUES ('CV-2000',2,2013,TO_TIMESTAMP ('10-Sep-19 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),6);
 INSERT INTO Equipment (serial_num,type_id,year_of_purchase,inspection,room_num)
-VALUES ('AD-2014',3,2013,'2017-10-06',7);
+VALUES ('AD-2014',3,2013,TO_TIMESTAMP ('10-Sep-20 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),7);
 INSERT INTO Equipment (serial_num,type_id,year_of_purchase,inspection,room_num)
-VALUES ('AD-2011',3,2015,'2016-10-06',7);
+VALUES ('AD-2011',3,2015,TO_TIMESTAMP ('10-Sep-21 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),7);
 INSERT INTO Equipment (serial_num,type_id,year_of_purchase,inspection,room_num)
-VALUES ('AD-1997',3,2011,'2012-10-06',10);
+VALUES ('AD-1997',3,2011,TO_TIMESTAMP ('10-Sep-22 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),10);
