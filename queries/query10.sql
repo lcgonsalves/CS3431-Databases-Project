@@ -3,7 +3,7 @@
 SELECT future_visit_date
 FROM (SELECT id, max(check_in)
 	  FROM Admission
-	  WHERE patient = "111-22-3333"
-	  GROUP BY id) as R1,
+	  WHERE patient = '111-22-3333'
+	  GROUP BY id) R1,
 	 Admission
 WHERE Admission.id = R1.id;
