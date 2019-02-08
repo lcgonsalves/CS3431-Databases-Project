@@ -124,4 +124,30 @@ INSERT INTO RoomServices (room_num,service) VALUES (3,'Stitching');
 INSERT INTO RoomServices (room_num,service) VALUES (3,'ICU');
 INSERT INTO RoomServices (room_num,service) VALUES (3,'Ultra-sound');
 
+----Create Equipment Type----
+INSERT INTO Type (type_id,model,description,instructions,num_units)
+VALUES (1,'Acura', 'Decent equipment','Start it',10);
+INSERT INTO Type (type_id,model,description,instructions,num_units)
+VALUES (2,'Civic', 'Use it often','Click it',20);
+INSERT INTO Type (type_id,model,description,instructions,num_units)
+VALUES (3,'Accord', 'Will last forever','Drive it',30);
+
 ----Create Equipment----
+INSERT INTO Equipment (serial_num,type_id,year_of_purchase,inspection,room_num)
+VALUES ('AC-2018',1,2018,'2018-10-06',1);
+INSERT INTO Equipment (serial_num,type_id,year_of_purchase,inspection,room_num)
+VALUES ('AC-2004',1,2017,'2018-10-05',2);
+INSERT INTO Equipment (serial_num,type_id,year_of_purchase,inspection,room_num)
+VALUES ('AC-2008',1,2016,'2018-10-04',2);
+INSERT INTO Equipment (serial_num,type_id,year_of_purchase,inspection,room_num)
+VALUES ('CV-2018',2,2018,'2018-11-06',2);
+INSERT INTO Equipment (serial_num,type_id,year_of_purchase,inspection,room_num)
+VALUES ('CV-2019',2,2019,'2018-01-06',3);
+INSERT INTO Equipment (serial_num,type_id,year_of_purchase,inspection,room_num)
+VALUES ('CV-2000',2,2013,'2018-02-06',6);
+INSERT INTO Equipment (serial_num,type_id,year_of_purchase,inspection,room_num)
+VALUES ('AD-2014',3,2013,'2017-10-06',7);
+INSERT INTO Equipment (serial_num,type_id,year_of_purchase,inspection,room_num)
+VALUES ('AD-2011',3,2015,'2016-10-06',7);
+INSERT INTO Equipment (serial_num,type_id,year_of_purchase,inspection,room_num)
+VALUES ('AD-1997',3,2011,'2012-10-06',10);
