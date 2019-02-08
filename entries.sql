@@ -187,12 +187,12 @@ VALUES (0013, '000-00-0004', TO_TIMESTAMP ('10-Sep-13 14:10:10.123000', 'DD-Mon-
 TO_TIMESTAMP ('10-Sep-26 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 69.45, 0.2, null);
 
 INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage, future_visit_date)
-VALUES (0012, '111-22-3333', TO_TIMESTAMP ('10-Sep-12 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
+VALUES (0014, '111-22-3333', TO_TIMESTAMP ('10-Sep-12 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
 TO_TIMESTAMP ('10-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 45, 0.5,
 TO_TIMESTAMP ('26-Sep-15 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'));
 
 INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage, future_visit_date)
-VALUES (0012, '111-22-3333', TO_TIMESTAMP ('10-Sep-12 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
+VALUES (0015, '111-22-3333', TO_TIMESTAMP ('10-Sep-12 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
 TO_TIMESTAMP ('10-Sep-25 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 45, 0.5,
 TO_TIMESTAMP ('26-Sep-19 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF')); --most recent admission
 
