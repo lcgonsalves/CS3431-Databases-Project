@@ -108,6 +108,6 @@ HAVING count(*) > 2;
 -- equipments (units) in both 2010 and 2011. Do not report duplication.
 SELECT type_id
 FROM Equipment
-WHERE year_of_purchase = 2010 OR year_of_purchase = 2011
+WHERE year_of_purchase = 2010 OR year_of_purchase = 2011;
 
 
