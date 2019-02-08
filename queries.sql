@@ -59,12 +59,25 @@ GROUP BY employee_id;
 
 -- Q7: Report the number of regular employees, division managers, and general
 -- managers in the hospital.
-
+( 
+  ( SELECT 'Regular Employees' as Type, count(*) as Count FROM Regular )
+  UNION
+  ( SELECT 'Divisional Managers' as Type, count(*) as Count FROM DivisionalManager )
+)
+UNION
+( SELECT 'General Managers' as Type, count(*) as Count FROM GeneralManager );
 
 -- Q8: For patients who have a scheduled future visit (which is part of their most recent
 -- visit), report that patient (SSN, and first and last names) and the visit date. Do not
 -- report patients who do not have scheduled visit.
-
+SELECT ssn, first_name, last_name, future_visit_date
+FROM (SELECT patient, future_visit_date
+	  FROM ( SELECT patient, id, max(check_in)
+	  	  		  FROM Admission
+	  	          GROUP BY patient, id)  -- select only most recent admission
+	  WHERE future_visit_date IS NOT NULL) as R1,
+	  Patient as P
+WHERE P.ssn in R1.patient;
 
 -- Q9: For each equipment type that has more than 3 units, report the equipment type ID,
 -- model, and the number of units this type has.
@@ -74,12 +87,13 @@ WHERE numunits > 3;
 
 -- Q10: Report the date of the coming future visit for patient with SSN = 111-22-3333.
 -- Note: This date should exist in the last (most recent) visit of that patient.
-SELECT min(dates) as dates
+SELECT future_visit_date
 FROM (SELECT id, max(check_in)
 	  FROM Admission
 	  WHERE patient = "111-22-3333"
-	  GROUP BY id) as R1
-WHERE FuturePatientVisitDates.admission_id = R1.id;
+	  GROUP BY id) as R1,
+	 Admission
+WHERE Admission.id = R1.id;
 
 -- Q11: For patient with SSN = 111-22-3333, report the doctors (only ID) who have
 -- examined this patient more than 2 times.
