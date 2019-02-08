@@ -58,7 +58,8 @@ FROM ( SELECT employee_id, count(room_id) as CNT
 GROUP BY employee_id;
 
 -- Q7: Report the number of regular employees, division managers, and general
--- managers in the hospital. The output should look like:
+-- managers in the hospital.
+
 
 -- Q8: For patients who have a scheduled future visit (which is part of their most recent
 -- visit), report that patient (SSN, and first and last names) and the visit date. Do not
@@ -67,9 +68,32 @@ GROUP BY employee_id;
 
 -- Q9: For each equipment type that has more than 3 units, report the equipment type ID,
 -- model, and the number of units this type has.
+SELECT type_id, model, numunits
+FROM Type
+WHERE numunits > 3;
 
 -- Q10: Report the date of the coming future visit for patient with SSN = 111-22-3333.
 -- Note: This date should exist in the last (most recent) visit of that patient.
+SELECT min(dates) as dates
+FROM (SELECT id, max(check_in)
+	  FROM Admission
+	  WHERE patient = "111-22-3333"
+	  GROUP BY id) as R1
+WHERE FuturePatientVisitDates.admission_id = R1.id;
 
+-- Q11: For patient with SSN = 111-22-3333, report the doctors (only ID) who have
+-- examined this patient more than 2 times.
+SELECT doctor_id, count(*) as count
+FROM (SELECT id FROM Admission WHERE patient = '111-22-3333') as R1,
+	 (SELECT doctor_id, admission_id as id FROM Examination ) as R2
+WHERE R1.id = R2.id
+GROUP BY doctor_id
+HAVING count(*) > 2;
+
+-- Q12: Report the equipment types (only the ID) for which the hospital has purchased
+-- equipments (units) in both 2010 and 2011. Do not report duplication.
+SELECT type_id
+FROM Equipment
+WHERE year_of_purchase = 2010 OR year_of_purchase = 2011
 
 
