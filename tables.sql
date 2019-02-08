@@ -94,7 +94,7 @@ check_in TIMESTAMP(0),
 check_out TIMESTAMP(0),
 cost number(12),
 insurance_coverage float(7),
-future_visit_date DATE,
+future_visit_date TIMESTAMP(0),
 CONSTRAINT admission_id_pk PRIMARY KEY(id)
 );
 
