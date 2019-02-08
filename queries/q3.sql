@@ -4,6 +4,6 @@
 -- #### --
 -- Note: If you keep the insurance coverage as a percentage, then compute this
 -- percentage before getting the sum.
-SELECT patient as SSN, sum(Admission.cost * Admission.insurance_coverage)
+SELECT patient as SSN, sum(Admission.cost * Admission.insurance_coverage) AS sum
 FROM Admission
 GROUP BY patient;

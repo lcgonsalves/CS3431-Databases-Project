@@ -122,6 +122,13 @@ INSERT INTO RoomServices (room_num,service) VALUES (3,'Stitching');
 INSERT INTO RoomServices (room_num,service) VALUES (3,'ICU');
 INSERT INTO RoomServices (room_num,service) VALUES (3,'Ultra-sound');
 
+----Create Permissions----
+INSERT INTO Permissions (employee_id,room_id, permission) VALUES (1,1,'Clean it');
+INSERT INTO Permissions (employee_id,room_id, permission) VALUES (1,2,'Wipe it');
+INSERT INTO Permissions (employee_id,room_id, permission) VALUES (1,3,'Wash it');
+INSERT INTO Permissions (employee_id,room_id, permission) VALUES (1,4,'Soak it');
+INSERT INTO Permissions (employee_id,room_id, permission) VALUES (2,1,'Clean it');
+
 ----Create Admissions----
 INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage)
 VALUES (0001, 000000007, TO_TIMESTAMP ('10-Sep-01 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
@@ -202,3 +209,5 @@ INSERT INTO Equipment (serial_num,type_id,year_of_purchase,inspection,room_num)
 VALUES ('AD-2011',3,2015,TO_TIMESTAMP ('10-Sep-21 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),7);
 INSERT INTO Equipment (serial_num,type_id,year_of_purchase,inspection,room_num)
 VALUES ('AD-1997',3,2011,TO_TIMESTAMP ('10-Sep-22 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),10);
+INSERT INTO Equipment (serial_num,type_id,year_of_purchase,inspection,room_num)
+VALUES ('A01-02X',3,2011,TO_TIMESTAMP ('10-Sep-22 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),10);
