@@ -72,7 +72,9 @@ UNION
 -- report patients who do not have scheduled visit.
 SELECT ssn, first_name, last_name, future_visit_date
 FROM (SELECT patient, future_visit_date
-	  FROM Admission -- select only most recent admission
+	  FROM ( SELECT patient, id, max(check_in)
+	  	  		  FROM Admission
+	  	          GROUP BY patient, id)  -- select only most recent admission
 	  WHERE future_visit_date IS NOT NULL) as R1,
 	  Patient as P
 WHERE P.ssn in R1.patient;
