@@ -125,3 +125,37 @@ INSERT INTO RoomServices (room_num,service) VALUES (3,'ICU');
 INSERT INTO RoomServices (room_num,service) VALUES (3,'Ultra-sound');
 
 ----Create Equipment----
+
+
+
+
+
+----Create Admissions----
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage)
+VALUES (0001, 000000007, "2005-01-22[T20:28:00[.00]]", "2005-01-23[T20:28:00[.00]]", 350, 0.8);
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage)
+VALUES (0002, 000000007, "2007-01-20[T20:28:00[.00]]", "2005-01-23[T20:28:00[.00]]", 500, 0.5);
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage)
+VALUES (0003, 000000007, "2007-03-22[T10:28:00[.00]]", "2008-01-23[T20:28:00[.00]]", 200, 0.7);
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage)
+VALUES (0004, 000000003, "2007-01-20[T20:28:00[.00]]", "2008-01-23[T20:28:00[.00]]", 670, 0.5);
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage)
+VALUES (0005, 000000003, "2007-03-22[T10:28:00[.00]]", "2008-01-23[T20:28:00[.00]]", 10000, 0.7);
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage)
+VALUES (0006, 000000002, "2007-05-20[T20:28:00[.00]]", "2008-01-23[T20:28:00[.00]]", 670, 0.5);
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage)
+VALUES (0007, 000000002, "2007-06-22[T10:28:00[.00]]", "2008-01-23[T20:28:00[.00]]", 10000, 0.7);
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage)
+VALUES (0008, 000000001, "2002-01-22[T20:28:00[.00]]", "2005-01-23[T20:28:00[.00]]", 456, 0.8);
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage)
+VALUES (0009, 000000001, "2002-01-20[T20:28:00[.00]]", "2005-01-23[T20:28:00[.00]]", 6666, 0.5);
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage)
+VALUES (0010, 000000001, "2019-03-22[T10:28:00[.00]]", "2019-03-25[T10:28:00[.00]]", 69.45, 0.2);
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage)
+VALUES (0011, 000000004, "2012-01-22[T20:28:00[.00]]", "2012-12-22[T20:28:00[.00]]", 456, 0.8);
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage)
+VALUES (0012, 000000004, "2013-01-20[T20:28:00[.00]]", "2013-02-10[T20:28:00[.00]]", 45, 0.5);
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage)
+VALUES (0013, 000000004, "2019-05-22[T10:28:00[.00]]", "2019-05-25[T10:28:00[.00]]", 69.45, 0.2);
+
+
