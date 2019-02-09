@@ -244,7 +244,7 @@ VALUES ('AD-2011',3,2015,TO_TIMESTAMP ('10-Sep-21 14:10:10.123000', 'DD-Mon-RR H
 INSERT INTO Equipment (serial_num,type_id,year_of_purchase,inspection,room_num)
 VALUES ('AD-1997',3,2011,TO_TIMESTAMP ('10-Sep-22 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),10);
 INSERT INTO Equipment (serial_num,type_id,year_of_purchase,inspection,room_num)
-VALUES ('A01-02L',3,2010,TO_TIMESTAMP ('10-Sep-22 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),10);
+VALUES ('A01-02X',3,2010,TO_TIMESTAMP ('10-Sep-22 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),10);
 INSERT INTO Equipment (serial_num,type_id,year_of_purchase,inspection,room_num)
 VALUES ('A01-01T',2,2011,TO_TIMESTAMP ('10-Sep-22 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),10);
 INSERT INTO Equipment (serial_num,type_id,year_of_purchase,inspection,room_num)
