@@ -175,8 +175,7 @@ TO_TIMESTAMP ('15-Oct-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'));
 
 INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage, future_visit_date)
 VALUES (0011, '000-00-0004', TO_TIMESTAMP ('10-Sep-11 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
-TO_TIMESTAMP ('10-Sep-12 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 456, 0.8,
-TO_TIMESTAMP ('10-Sep-14 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'));
+TO_TIMESTAMP ('10-Sep-12 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 456, 0.8, null);
 
 INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage, future_visit_date)
 VALUES (0012, '000-00-0004', TO_TIMESTAMP ('10-Sep-12 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
