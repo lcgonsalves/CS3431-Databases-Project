@@ -175,7 +175,8 @@ TO_TIMESTAMP ('15-Oct-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'));
 
 INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage, future_visit_date)
 VALUES (0011, '000-00-0004', TO_TIMESTAMP ('10-Sep-11 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
-TO_TIMESTAMP ('10-Sep-12 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 456, 0.8);
+TO_TIMESTAMP ('10-Sep-12 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 456, 0.8,
+TO_TIMESTAMP ('10-Sep-14 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'));
 
 INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage, future_visit_date)
 VALUES (0012, '000-00-0004', TO_TIMESTAMP ('10-Sep-12 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
@@ -192,10 +193,29 @@ TO_TIMESTAMP ('23-Sep-10 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 45, 0.5,
 TO_TIMESTAMP ('26-Sep-10 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'));
 
 INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage, future_visit_date)
-VALUES (0015, '111-22-3333', TO_TIMESTAMP ('1-Oct-10 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
-TO_TIMESTAMP ('1-Oct-10 19:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 45, 0.5,
+VALUES (0015, '111-22-3333', TO_TIMESTAMP ('26-Sep-10 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
+TO_TIMESTAMP ('27-Sep-10 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 45, 0.5,
+TO_TIMESTAMP ('28-Sep-10 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'));
+
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage, future_visit_date)
+VALUES (0016, '111-22-3333', TO_TIMESTAMP ('29-Sep-10 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
+TO_TIMESTAMP ('29-Sep-10 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 45, 0.5,
+TO_TIMESTAMP ('30-Sep-10 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'));
+
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage, future_visit_date)
+VALUES (0017, '111-22-3333', TO_TIMESTAMP ('1-Oct-10 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
+TO_TIMESTAMP ('1-Oct-10 19:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 46, 0.6,
 TO_TIMESTAMP ('24-Oct-11 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF')); --most recent admission
 
+----Create Examinations----
+INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (1,0001, 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (1,0002, 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (1,0003, 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (2,0004, 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (4,0014, 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (3,0014, 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (4,0015, 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (4,0016, 'Decent exam');
 
 ----Create Equipment Type----
 INSERT INTO Type (type_id,model,description,instructions,num_units)
