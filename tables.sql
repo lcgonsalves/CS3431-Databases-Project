@@ -93,6 +93,7 @@ patient varchar2(20) NOT NULL,
 check_in TIMESTAMP(0),
 check_out TIMESTAMP(0),
 cost number(12),
+insurance_cost number(12),
 insurance_coverage float(7),
 future_visit_date TIMESTAMP(0),
 CONSTRAINT admission_id_pk PRIMARY KEY(id),
@@ -118,6 +119,7 @@ CONSTRAINT r_room_num_fk FOREIGN KEY (room_num) REFERENCES Room(room_num)
 CREATE TABLE Examination(
 doctor_id number(20) NOT NULL,
 admission_id number(30) NOT NULL,
+service varchar2(100) NOT NULL,
 comments varchar2(1000),
 CONSTRAINT e_doctor_id_fk FOREIGN KEY (doctor_id) REFERENCES Doctor(id),
 CONSTRAINT e_admission_id_fk FOREIGN KEY (admission_id) REFERENCES Admission(id)

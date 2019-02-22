@@ -132,110 +132,110 @@ INSERT INTO Permissions (employee_id,room_id, permission) VALUES (1,4,'Soak it')
 INSERT INTO Permissions (employee_id,room_id, permission) VALUES (2,1,'Clean it');
 
 ----Create Admissions----
-INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage, future_visit_date)
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_cost, insurance_coverage, future_visit_date)
 VALUES (0001, '000-00-0007', TO_TIMESTAMP ('10-Sep-01 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
-TO_TIMESTAMP ('10-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 350, 0.8, null);
+TO_TIMESTAMP ('10-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 350, 300, 0.8, null);
 
-INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage, future_visit_date)
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_cost, insurance_coverage, future_visit_date)
 VALUES (0002, '000-00-0007', TO_TIMESTAMP ('10-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
-TO_TIMESTAMP ('10-Sep-02 15:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 500, 0.5, null);
+TO_TIMESTAMP ('10-Sep-02 15:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 500, 250, 0.5, null);
 
-INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage, future_visit_date)
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_cost, insurance_coverage, future_visit_date)
 VALUES (0003, '000-00-0007', TO_TIMESTAMP ('10-Sep-03 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
-TO_TIMESTAMP ('10-Sep-05 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 200, 0.7, null);
+TO_TIMESTAMP ('10-Sep-05 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 200, 175, 0.7, null);
 
-INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage, future_visit_date)
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_cost, insurance_coverage, future_visit_date)
 VALUES (0004, '000-00-0003', TO_TIMESTAMP ('10-Sep-04 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
-TO_TIMESTAMP ('10-Sep-08 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 670, 0.5, null);
+TO_TIMESTAMP ('10-Sep-08 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 670, 335, 0.5, null);
 
-INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage, future_visit_date)
+INSERT INTO Admission (id, patient, check_in, check_out, cost,insurance_cost, insurance_coverage, future_visit_date)
 VALUES (0005, '000-00-0003', TO_TIMESTAMP ('10-Sep-05 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
-TO_TIMESTAMP ('10-Oct-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 10000, 0.7, null);
+TO_TIMESTAMP ('10-Oct-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 10000, 700, 0.7, null);
 
-INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage, future_visit_date)
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_cost, insurance_coverage, future_visit_date)
 VALUES (0006, '000-00-0002', TO_TIMESTAMP ('10-Sep-06 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
-TO_TIMESTAMP ('11-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 670, 0.5, null);
+TO_TIMESTAMP ('11-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 670, 335, 0.5, null);
 
-INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage, future_visit_date)
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_cost, insurance_coverage, future_visit_date)
 VALUES (0007, '000-00-0002', TO_TIMESTAMP ('10-Sep-07 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
-TO_TIMESTAMP ('12-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 10000, 0.7, null);
+TO_TIMESTAMP ('12-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 10000, 700, 0.7, null);
 
-INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage, future_visit_date)
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_cost, insurance_coverage, future_visit_date)
 VALUES (0008, '000-00-0001', TO_TIMESTAMP ('10-Sep-08 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
-TO_TIMESTAMP ('13-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 456, 0.8, null);
+TO_TIMESTAMP ('13-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 456, 375, 0.8, null);
 
-INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage, future_visit_date)
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_cost, insurance_coverage, future_visit_date)
 VALUES (0009, '000-00-0001', TO_TIMESTAMP ('10-Sep-09 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
-TO_TIMESTAMP ('14-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 6666, 0.5, null);
+TO_TIMESTAMP ('14-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 6666, 3333, 0.5, null);
 
-INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage, future_visit_date)
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_cost, insurance_coverage, future_visit_date)
 VALUES (0010, '000-00-0001', TO_TIMESTAMP ('10-Sep-10 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
-TO_TIMESTAMP ('15-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 69.45, 0.2,
+TO_TIMESTAMP ('15-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 69.45, 15, 0.2,
 TO_TIMESTAMP ('15-Oct-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'));
 
-INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage, future_visit_date)
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_cost, insurance_coverage, future_visit_date)
 VALUES (0011, '000-00-0004', TO_TIMESTAMP ('10-Sep-11 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
-TO_TIMESTAMP ('10-Sep-12 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 456, 0.8, null);
+TO_TIMESTAMP ('10-Sep-12 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 456, 375, 0.8, null);
 
-INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage, future_visit_date)
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_cost, insurance_coverage, future_visit_date)
 VALUES (0012, '000-00-0004', TO_TIMESTAMP ('10-Sep-12 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
-TO_TIMESTAMP ('10-Sep-25 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 45, 0.5,
+TO_TIMESTAMP ('10-Sep-25 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 45, 22.5, 0.5,
 TO_TIMESTAMP ('10-Sep-13 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'));
 
-INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage, future_visit_date)
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_cost, insurance_coverage, future_visit_date)
 VALUES (0013, '000-00-0004', TO_TIMESTAMP ('10-Sep-13 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
-TO_TIMESTAMP ('10-Sep-26 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 69.45, 0.2, null);
+TO_TIMESTAMP ('10-Sep-26 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 69.45, 15, 0.2, null);
 
-INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage, future_visit_date)
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_cost, insurance_coverage, future_visit_date)
 VALUES (0014, '111-22-3333', TO_TIMESTAMP ('10-Sep-10 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
-TO_TIMESTAMP ('23-Sep-10 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 45, 0.5,
+TO_TIMESTAMP ('23-Sep-10 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 45, 22.5, 0.5,
 TO_TIMESTAMP ('26-Sep-10 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'));
 
-INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage, future_visit_date)
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_cost, insurance_coverage, future_visit_date)
 VALUES (0015, '111-22-3333', TO_TIMESTAMP ('26-Sep-10 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
-TO_TIMESTAMP ('27-Sep-10 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 45, 0.5,
+TO_TIMESTAMP ('27-Sep-10 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 45, 22.5, 0.5,
 TO_TIMESTAMP ('28-Sep-10 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'));
 
-INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage, future_visit_date)
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_cost, insurance_coverage, future_visit_date)
 VALUES (0016, '111-22-3333', TO_TIMESTAMP ('29-Sep-10 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
-TO_TIMESTAMP ('29-Sep-10 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 45, 0.5,
+TO_TIMESTAMP ('29-Sep-10 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 45, 22.5, 0.5,
 TO_TIMESTAMP ('30-Sep-10 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'));
 
-INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_coverage, future_visit_date)
+INSERT INTO Admission (id, patient, check_in, check_out, cost, insurance_cost, insurance_coverage, future_visit_date)
 VALUES (0017, '111-22-3333', TO_TIMESTAMP ('1-Oct-10 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
-TO_TIMESTAMP ('1-Oct-10 19:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 46, 0.6,
+TO_TIMESTAMP ('1-Oct-10 19:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'), 46, 28, 0.6,
 TO_TIMESTAMP ('24-Oct-11 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF')); --most recent admission
 
 ----Create Examinations----
-INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (1,0001, 'Decent exam');
-INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (1,0002, 'Decent exam');
-INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (1,0003, 'Decent exam');
-INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (1,0004, 'Decent exam');
-INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (1,0005, 'Decent exam');
-INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (1,0006, 'Decent exam');
-INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (1,0007, 'Decent exam');
-INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (1,0008, 'Decent exam');
-INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (1,0009, 'Decent exam');
-INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (1,0010, 'Decent exam');
-INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (1,0011, 'Decent exam');
-INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (1,0012, 'Subpar exam');
-INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (1,0012, 'Decent exam');
-INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (2,0001, 'Decent exam');
-INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (2,0002, 'Decent exam');
-INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (2,0003, 'Decent exam');
-INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (2,0004, 'Decent exam');
-INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (2,0005, 'Decent exam');
-INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (2,0006, 'Decent exam');
-INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (2,0007, 'Decent exam');
-INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (2,0008, 'Decent exam');
-INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (2,0009, 'Decent exam');
-INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (2,0016, 'Decent exam');
-INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (2,0011, 'Decent exam');
-INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (2,0012, 'Subpar exam');
-INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (4,0013, 'Decent exam');
-INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (3,0014, 'Decent exam');
-INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (4,0015, 'Decent exam');
-INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (4,0010, 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,service,comments) VALUES (1,0001,'ICU', 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,service,comments) VALUES (1,0002,'ICU', 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,service,comments) VALUES (1,0003,'ICU', 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,service,comments) VALUES (1,0004,'ICU', 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,service,comments) VALUES (1,0005,'ICU', 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,service,comments) VALUES (1,0006,'ICU', 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,service,comments) VALUES (1,0007,'ICU', 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,service,comments) VALUES (1,0008,'ICU', 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,service,comments) VALUES (1,0009,'ICU', 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,service,comments) VALUES (1,0010,'ICU', 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,service,comments) VALUES (1,0011,'ICU', 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,service,comments) VALUES (1,0012,'ICU', 'Subpar exam');
+INSERT INTO Examination (doctor_id,admission_id,service,comments) VALUES (1,0012,'ICU', 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,service,comments) VALUES (2,0001,'ICU', 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,service,comments) VALUES (2,0002,'ICU', 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,service,comments) VALUES (2,0003,'ICU', 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,service,comments) VALUES (2,0004,'ICU', 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,service,comments) VALUES (2,0005,'ICU', 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,service,comments) VALUES (2,0006,'ICU', 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,service,comments) VALUES (2,0007,'ICU', 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,service,comments) VALUES (2,0008,'ICU', 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,service,comments) VALUES (2,0009,'ICU', 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,service,comments) VALUES (2,0016,'Massage', 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,service,comments) VALUES (2,0011,'ICU', 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,service,comments) VALUES (2,0012,'ICU', 'Subpar exam');
+INSERT INTO Examination (doctor_id,admission_id,service,comments) VALUES (4,0013,'Massage', 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,service,comments) VALUES (3,0014,'X-Rays', 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,service,comments) VALUES (4,0015,'MRI', 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,service,comments) VALUES (4,0010,'Massage', 'Decent exam');
 
 ----Create Equipment Type----
 INSERT INTO Type (type_id,model,description,instructions,num_units)
