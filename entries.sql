@@ -239,11 +239,11 @@ INSERT INTO Examination (doctor_id,admission_id,service,comments) VALUES (4,0010
 
 ----Create Equipment Type----
 INSERT INTO Type (type_id,model,description,instructions,num_units)
-VALUES (1,'Acura', 'Decent equipment','Start it',10);
+VALUES (1,'CT Scanner', 'Decent equipment','Start it',10);
 INSERT INTO Type (type_id,model,description,instructions,num_units)
-VALUES (2,'Civic', 'Use it often','Click it',20);
+VALUES (2,'Ultrasound', 'Use it often','Click it',20);
 INSERT INTO Type (type_id,model,description,instructions,num_units)
-VALUES (3,'Accord', 'Will last forever','Drive it',30);
+VALUES (3,'X-Ray', 'Will last forever','Drive it',30);
 
 ----Create Equipment----
 INSERT INTO Equipment (serial_num,type_id,year_of_purchase,inspection,room_num)

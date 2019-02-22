@@ -137,7 +137,7 @@ CONSTRAINT type_id_pk PRIMARY KEY(type_id)
 CREATE TABLE Equipment(
 serial_num varchar2(30) NOT NULL,
 type_id number(20) NOT NULL,
-year_of_purchase char(4),
+year_of_purchase number(4),
 inspection TIMESTAMP(0),
 room_num number(10) NOT NULL,
 CONSTRAINT serial_num_pk PRIMARY KEY(serial_num),
