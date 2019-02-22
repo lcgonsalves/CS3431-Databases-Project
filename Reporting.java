@@ -49,11 +49,22 @@ public class Reporting {
 
                         if(tries == 0){
                             System.out.println("Too many tries...exiting");
+                            try {
+                                c.close();
+                            } catch (SQLException e) {
+                                e.printStackTrace();
+                            }
                             System.exit(-1);
                         }
                     }
 
                     reportPatientBasicInfo(c, patientSsn);
+
+                    try {
+                        c.close();
+                    } catch (SQLException e) {
+                        e.printStackTrace();
+                    }
 
                     break;
                 case 2: //> java Reporting <userName> <Password> 2
@@ -70,11 +81,22 @@ public class Reporting {
 
                         if(tries == 0){
                             System.out.println("Too many tries...exiting");
+                            try {
+                                c.close();
+                            } catch (SQLException e) {
+                                e.printStackTrace();
+                            }
                             System.exit(-1);
                         }
                     }
 
                     reportDoctorBasicInfo(c, Integer.parseInt(doctorId));
+
+                    try {
+                        c.close();
+                    } catch (SQLException e) {
+                        e.printStackTrace();
+                    }
 
                     break;
                 case 3: //> java Reporting <userName> <Password> 3
@@ -91,11 +113,22 @@ public class Reporting {
 
                         if(tries == 0){
                             System.out.println("Too many tries...exiting");
+                            try {
+                                c.close();
+                            } catch (SQLException e) {
+                                e.printStackTrace();
+                            }
                             System.exit(-1);
                         }
                     }
 
                     reportAdmissionInfo(c, Integer.parseInt(adminNum));
+
+                    try {
+                        c.close();
+                    } catch (SQLException e) {
+                        e.printStackTrace();
+                    }
 
                     break;
                 case 4: //> java Reporting <userName> <Password> 4
@@ -112,6 +145,11 @@ public class Reporting {
 
                         if(tries == 0){
                             System.out.println("Too many tries...exiting");
+                            try {
+                                c.close();
+                            } catch (SQLException e) {
+                                e.printStackTrace();
+                            }
                             System.exit(-1);
                         }
                     }
@@ -129,15 +167,29 @@ public class Reporting {
 
                         if(tries == 0){
                             System.out.println("Too many tries...exiting");
+                            try {
+                                c.close();
+                            } catch (SQLException e) {
+                                e.printStackTrace();
+                            }
                             System.exit(-1);
                         }
                     }
 
                     updateAdmissionPayment(c, Integer.parseInt(mAdminNum), Integer.parseInt(newTotalPayment));
-
+                    try {
+                        c.close();
+                    } catch (SQLException e) {
+                        e.printStackTrace();
+                    }
                     break;
                 default:
                     System.out.println("Option argument can only be an whole number between 1-4...exiting");
+                    try {
+                        c.close();
+                    } catch (SQLException e) {
+                        e.printStackTrace();
+                    }
                     System.exit(-1);
             }
         }
@@ -265,6 +317,11 @@ public class Reporting {
         }catch (SQLException e){
             System.out.println("Failed to communicate with database... Exiting.");
             e.printStackTrace();
+            try {
+                c.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
             System.exit(-1);
         }
     }
@@ -390,6 +447,13 @@ public class Reporting {
         }catch (SQLException e){
             System.out.println("Failed to communicate with database... Exiting.");
             e.printStackTrace();
+
+            try {
+                c.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+
             System.exit(-1);
         }
     }
@@ -417,6 +481,13 @@ public class Reporting {
         }catch (SQLException e){
             System.out.println("Failed to communicate with database... Exiting.");
             e.printStackTrace();
+
+            try {
+                c.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+
             System.exit(-1);
         }
     }
