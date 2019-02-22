@@ -24,11 +24,12 @@ END;
 
 CREATE OR REPLACE TRIGGER EmergencyFutureDate
   AFTER INSERT ON Admission
+  FOR EACH ROW
   DECLARE admissionType varchar2(100);
 
   BEGIN
 
-  SELECT exam.service INTO admissionType
+  SELECT DISTINCT exam.service INTO admissionType
   FROM Examination exam
   WHERE exam.admission_id = :new.id;
 
