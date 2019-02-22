@@ -22,10 +22,10 @@ CREATE OR REPLACE TRIGGER CalculateInsurance
 END;
 /
 
--- Emergency Services are considered to be ICU and Stitching
 CREATE OR REPLACE TRIGGER EmergencyFutureDate
-  BEFORE INSERT ON Admission
+  AFTER INSERT ON Admission
   DECLARE admissionType varchar2(100);
+
   BEGIN
 
   SELECT exam.service INTO admissionType
@@ -33,8 +33,9 @@ CREATE OR REPLACE TRIGGER EmergencyFutureDate
   WHERE exam.admission_id = :new.id;
 
   IF (admissionType = 'ICU' OR admissionType = 'Stitching') THEN
+    UPDATE Admission SET future_visit_date = ADD_Months(sysdate, 2) WHERE id = :new.id;
     --:new.future_visit_date = ADD_MONTHS(:new.check_in, 2);
-    RAISE_APPLICATION_ERROR(-20004, 'You must leave a comment.');
+    --RAISE_APPLICATION_ERROR(-20004, 'You must leave a comment.');
   END IF;
 
 END;
