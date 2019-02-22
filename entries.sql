@@ -26,7 +26,7 @@ VALUES ('111-22-3333','109 Institute Road, Worcester, MA, 01609',15555555514,'Ca
 INSERT INTO Doctor (id,specialty,gender,first_name,last_name)
 VALUES (1,'Heart','Male','Raymond','Dunn');
 INSERT INTO Doctor (id,specialty,gender,first_name,last_name)
-VALUES (2,'Brain','Male','Josh','Gordan');
+VALUES (2,'Brain','Female','Marissa','Gordan');
 INSERT INTO Doctor (id,specialty,gender,first_name,last_name)
 VALUES (3,'Hand','Male','Tom','Brady');
 INSERT INTO Doctor (id,specialty,gender,first_name,last_name)
@@ -210,11 +210,32 @@ TO_TIMESTAMP ('24-Oct-11 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF')); --most r
 INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (1,0001, 'Decent exam');
 INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (1,0002, 'Decent exam');
 INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (1,0003, 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (1,0004, 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (1,0005, 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (1,0006, 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (1,0007, 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (1,0008, 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (1,0009, 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (1,0010, 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (1,0011, 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (1,0012, 'Subpar exam');
+INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (1,0012, 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (2,0001, 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (2,0002, 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (2,0003, 'Decent exam');
 INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (2,0004, 'Decent exam');
-INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (4,0014, 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (2,0005, 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (2,0006, 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (2,0007, 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (2,0008, 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (2,0009, 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (2,0016, 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (2,0011, 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (2,0012, 'Subpar exam');
+INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (4,0013, 'Decent exam');
 INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (3,0014, 'Decent exam');
 INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (4,0015, 'Decent exam');
-INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (4,0016, 'Decent exam');
+INSERT INTO Examination (doctor_id,admission_id,comments) VALUES (4,0010, 'Decent exam');
 
 ----Create Equipment Type----
 INSERT INTO Type (type_id,model,description,instructions,num_units)
@@ -253,3 +274,14 @@ INSERT INTO Equipment (serial_num,type_id,year_of_purchase,inspection,room_num)
 VALUES ('A01-04G',2,2011,TO_TIMESTAMP ('10-Sep-22 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),10);
 INSERT INTO Equipment (serial_num,type_id,year_of_purchase,inspection,room_num)
 VALUES ('A01-09J',2,2010,TO_TIMESTAMP ('10-Sep-22 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),10);
+
+INSERT INTO AdmittedPatients (patient_ssn, admission_id) VALUES ('000-00-0001', 0008);
+INSERT INTO AdmittedPatients (patient_ssn, admission_id) VALUES ('000-00-0001', 0009);
+INSERT INTO AdmittedPatients (patient_ssn, admission_id) VALUES ('000-00-0001', 0010);
+
+INSERT INTO RoomStay (admission_id, room_num, start_time, end_time) VALUES (0008, 3, TO_TIMESTAMP ('10-Sep-10 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
+TO_TIMESTAMP ('15-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'));
+INSERT INTO RoomStay (admission_id, room_num, start_time, end_time) VALUES (0009, 3, TO_TIMESTAMP ('10-Sep-10 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
+TO_TIMESTAMP ('15-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'));
+INSERT INTO RoomStay (admission_id, room_num, start_time, end_time) VALUES (0010, 3, TO_TIMESTAMP ('10-Sep-10 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'),
+TO_TIMESTAMP ('15-Sep-02 14:10:10.123000', 'DD-Mon-RR HH24:MI:SS.FF'));
